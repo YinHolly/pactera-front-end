@@ -1,0 +1,28 @@
+{
+  "name": "pactera-front-end-react",
+  "version": "1.0.0",
+  "description": "pactera front-end React",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Holly",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+ 
+}
