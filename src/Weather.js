@@ -23,7 +23,7 @@ class Weather extends React.Component {
     // 钩子函数  获取城市
     componentDidMount() {
         var that = this;
-        let url = "http://localhost:8081/pactera/dev/city/getCityList";
+        let url = "http://59.110.143.99:8081/pactera/dev/city/getCityList";
         axios.get(url)
             .then(function (response) {
                 console.log(response.data.data);
@@ -55,7 +55,7 @@ class Weather extends React.Component {
             isLoaded: true
         })
         if (e.target.value.length > 0) {
-            let url = "http://localhost:8081/pactera/dev/weatherAPI/getWehtherInfo?city=" + e.target.value;
+            let url = "http://59.110.143.99:8081/pactera/dev/weatherAPI/getWehtherInfo?city=" + e.target.value;
             axios.get(url)
                 .then(function (response) {
                     console.log(response.data.data);

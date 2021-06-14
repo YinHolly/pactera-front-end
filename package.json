@@ -1,5 +1,5 @@
 {
-  "name": "pactera-front-end-react",
+  "name": "pactera-front-end",
   "version": "1.0.0",
   "description": "pactera front-end React",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "author": "Holly",
+  "author": "CodeMix",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
@@ -23,6 +23,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
- 
+  ],
+  "homepage": "."
 }

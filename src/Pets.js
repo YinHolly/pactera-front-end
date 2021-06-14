@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 class Pets extends React.Component {
-
+	
 	//构造函数
 	constructor(props) {
 		super(props);
@@ -13,8 +13,8 @@ class Pets extends React.Component {
 			isLoaded: false
 		}
 	}
-
 	render() {
+		let { genderType, catsList, isLoaded } = this.state;
 		return (
 			<div>
 				<ul>
@@ -27,6 +27,7 @@ class Pets extends React.Component {
 									</li>
 								)}
 							</ul>
+
 						</li>
 					)}
 				</ul>
@@ -34,10 +35,10 @@ class Pets extends React.Component {
 		)
 	}
 
-	// 钩子函数
+	// 发送请求
 	componentDidMount() {
 		var that = this;
-		let url = "http://localhost:8081/pactera/dev/petsApi/getCatsList";
+		let url = "http://59.110.143.99:8081/pactera/dev/petsApi/getCatsList";
 		axios.get(url)
 			.then(function (response) {
 				console.log(response.data.data);
@@ -52,6 +53,7 @@ class Pets extends React.Component {
 			})
 			.catch(function (error) {
 				console.log(error);
+
 			})
 	}
 }
